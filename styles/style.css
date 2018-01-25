@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	color: white;
+	font-family: "Arial";
+	margin-top: -100vh;
+}
+#title, #upload {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("/img/mri.gif");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: black;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 20px;
+	padding-right: -20px;
+}
+#titleText {
+	font-size: 5vw;
+	margin-bottom: -18px;
+}
+#desc {
+	font-size: 1.3vw;
+	width: 30vw;
+}
+#start, #uploadBut {
+	width: 12vw;
+	height: 5vh;
+	margin-top: 1vh;
+	background-color: rgba(255,255,255,1);
+	border: none;
+	color: black;
+	font-size: 1.5vw;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-content: center;
+}
+#chevron {
+	height: 3vh;
+	width: 2vh;
+	background-color: white;
+	background-image: url("https://www.shareicon.net/data/2015/10/06/113447_right_512x512.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 1vw;
+}
