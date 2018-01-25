@@ -3,32 +3,42 @@ body {
 	overflow: hidden;
 	color: white;
 	font-family: "Arial";
-	margin-top: -100vh;
+/*	margin-top: -100vh;*/
+	transition: all ease 1s;
 }
 #title, #upload {
 	width: 100vw;
 	height: 100vh;
-	background-image: url("/img/mri.gif");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	background-color: black;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: flex-start;
 	padding-left: 20px;
 	padding-right: -20px;
+	transition: all ease 1s;
+}
+#title {
+	background-image: url("/img/mri.gif");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: black;
+	background-attachment: fixed;
 }
 #titleText {
 	font-size: 5vw;
-	margin-bottom: -18px;
+	margin-bottom: -10px;
 }
 #desc {
 	font-size: 1.3vw;
 	width: 30vw;
 }
-#start, #uploadBut {
+#upload {
+	color: black;
+	justify-content: flex-start;
+	padding-top: 40vh;
+}
+#start {
 	width: 12vw;
 	height: 5vh;
 	margin-top: 1vh;
@@ -41,6 +51,10 @@ body {
 	justify-content: center;
 	align-content: center;
 }
+#uploadBut {
+	background-color: black;
+	color: white;
+}
 #chevron {
 	height: 3vh;
 	width: 2vh;
@@ -50,4 +64,13 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-left: 1vw;
+}
+#check {
+	display: flex;
+	flex-flow: row;
+}
+#images {
+/*	padding-left: 100vw;*/
+	display: flex;
+	flex-flow: row wrap;
 }

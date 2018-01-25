@@ -6,7 +6,7 @@
 		
 		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 		
-		<script src="scripts/main.js"></script>
+		<script src="scripts/indexbundle.js"></script>
 
 		<title>Mri Health</title>
 	</head>
@@ -22,7 +22,14 @@
 			<div ID="upload">
 				<div ID="titleText">Select your Images</div>
 				<div ID="desc">(.mha/.whatever/.etc)</div>
-				<button ID="uploadBut">Upload</button>
+    			<input id="uploadBut" type="file" multiple/>
+				<div ID="check">
+					<input type="checkbox" ID="highlight"/> 
+					<div ID="check">Highlight areas</div>
+				</div>
+				<div ID="images">
+				
+				</div>
 			</div>
 		</div>
 	</body>

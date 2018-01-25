@@ -11,7 +11,7 @@ var pF = path.resolve(__dirname, "public");
 const server = require("http").createServer(app);
 
 app.use("/public", express.static("public"));
-app.use("/scripts", express.static("js"));
+app.use("/scripts", express.static("build"));
 app.use("/styling", express.static("styles"));
 app.use("/img", express.static("images"));
 
