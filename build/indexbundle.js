@@ -80,9 +80,31 @@
 		console.log(document.getElementById("uploadBut").files);
 		
 		var fileList = document.getElementById("uploadBut").files;
+		var highlight = document.getElementById("highlight");
+		
+		console.log(highlight.checked);
 		
 		document.getElementById("uploadBut").remove();
-		document.getElementById("check").remove();
+	
+		highlight.style.marginLeft = "-20vw";
+		highlight.style.width = "0";
+		
+		if(highlight.checked) {
+			highlight.style.marginRight = "20vw";
+			document.getElementById("checkText").innerHTML = "Highlight areas on";
+		}
+		
+		document.getElementById("uploadLabel").style.height = "0";
+		setTimeout(function() {
+			document.getElementById("uploadLabel").remove();
+			
+			if(highlight.checked) {
+				highlight.remove();
+			} else {
+				document.getElementById("check").remove();
+			}
+		}, 600);
+		
 		document.getElementById("upload").style.paddingTop = "0";
 		
 		var acceptableFiles = ["image/jpeg", "image/png"];

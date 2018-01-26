@@ -38,7 +38,7 @@ body {
 	justify-content: flex-start;
 	padding-top: 40vh;
 }
-#start {
+#start, #uploadLabel {
 	width: 12vw;
 	height: 5vh;
 	margin-top: 1vh;
@@ -50,8 +50,13 @@ body {
 	flex-flow: row;
 	justify-content: center;
 	align-content: center;
+	align-items: center;
+	transition: all ease 0.5s;
 }
-#uploadBut {
+#start:hover, #uploadLabel:hover {
+	margin-left: 1vw;
+}
+#uploadLabel {
 	background-color: black;
 	color: white;
 }
@@ -68,9 +73,16 @@ body {
 #check {
 	display: flex;
 	flex-flow: row;
+	transition: all ease 0.5s;
+}
+#highlight {
+	transition: all ease 0.5s;
 }
 #images {
 /*	padding-left: 100vw;*/
 	display: flex;
 	flex-flow: row wrap;
+}
+input[type=file] {
+	background-color: black;
 }
